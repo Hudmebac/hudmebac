@@ -1,0 +1,208 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Use a modern font similar to SSE */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for better readability */
+    color: #333; /* Dark text for contrast */
+}
+
+header {
+    background-color: #0072c6; /* SSE blue */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+    font-size: 2.5em; /* Larger font for the main title */
+    margin: 0;
+    font-weight: bold; /* Bold font for emphasis */
+}
+
+h2 {
+    color: #0072c6; /* SSE blue for section headings */
+    margin-top: 20px;
+    font-weight: bold; /* Bold font for section headings */
+}
+
+ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+}
+
+li {
+    background: #ffffff; /* White background for list items */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px; /* Rounded corners for a softer look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+a {
+    color: #0072c6; /* SSE blue for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: 600; /* Semi-bold for links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+footer {
+    background-color: #0072c6; /* SSE blue */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Adjust title size for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust section heading size */
+    }
+
+    li {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+.back-to-home {
+    position: absolute; /* Position it absolutely within the header */
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Change to white */
+    font-weight: bold; /* Make it bold */
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+.clock-frame {
+    position: relative;
+    width: 220px; /* Slightly larger than the clock */
+    height: 220px; /* Slightly larger than the clock */
+    background: url('path/to/brick-wall-texture.jpg'); /* Add a brick wall texture */
+    border-radius: 10px; /* Rounded corners for the frame */
+    padding: 10px; /* Space between the frame and the clock */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock {
+    border: 5px solid #0072c6; /* Keep the existing border */
+    border-radius: 50%; /* Keep the existing round shape */
+    background-color: white; /* Keep the existing background */
+}
+
+.sun {
+    position: absolute;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center it */
+    animation: moveSun 5s linear infinite; /* Animation for the sun */
+}
+
+.sun-core {
+    width: 40px; /* Size of the sun */
+    height: 40px; /* Size of the sun */
+    background-color: yellow; /* Color of the sun */
+    border-radius: 50%; /* Make it circular */
+    position: relative; /* Position relative for rays */
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.8); /* Shimmer effect */
+    animation: shimmer 1.5s infinite alternate; /* Shimmering effect */
+}
+
+.sun-rays {
+    position: absolute;
+    width: 100px; /* Length of rays */
+    height: 100px; /* Length of rays */
+    top: -30px; /* Position above the sun */
+    left: -30px; /* Center the rays */
+    border-radius: 50%; /* Make it circular */
+    background: radial-gradient(circle, transparent 30%, yellow 30%, yellow 70%, transparent 70%); /* Create rays */
+    transform: rotate(45deg); /* Rotate to create rays */
+}
+
+@keyframes shimmer {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 0, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(255, 255, 0, 1);
+    }
+}
+
+@keyframes moveSun {
+    0% {
+        left: 0%; /* Start from the left */
+        top: -20px; /* Keep it above the clock */
+    }
+    50% {
+        left: 50%; /* Move to the center */
+        top: -60px; /* Move up to create an arc */
+    }
+    100% {
+        left: 100%; /* Move to the right */
+        top: -20px; /* Return to the original height */
+    }
+}
+
+#animationCanvas {
+    display: block;
+    margin: 20px auto; /* Center the canvas */
+    border: 1px solid #ccc; /* Optional border */
+}
+
+/* Additional styles for the stickman */
+.stickman {
+    position: absolute;
+    width: 10px; /* Width of the stickman */
+    height: 30px; /* Height of the stickman */
+    background-color: black; /* Color of the stickman */
+}
+
+/* Positioning the stickman */
+.stickman-arm {
+    position: absolute;
+    width: 5px; /* Width of the arms */
+    height: 10px; /* Height of the arms */
+    background-color: black; /* Color of the arms */
+}
+
+.stickman-leg {
+    position: absolute;
+    width: 5px; /* Width of the legs */
+    height: 10px; /* Height of the legs */
+    background-color: black; /* Color of the legs */
+}
+
+.speech-bubble {
+    position: relative;
+    background: #f1f1f1;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    max-width: 80%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 20px; /* Adjust this value to position the triangle */
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #f1f1f1 transparent;
+} 

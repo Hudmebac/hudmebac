@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact of Daylight Saving Time on Health</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header, footer {
+            background: #0072c6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0072c6;
+        }
+        form {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #0072c6;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #0072c6;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005fa3;
+        }
+        @keyframes sunrise {
+            0% {
+                transform: translate(-100%, 20%) rotate(0deg); /* Start lower */
+                opacity: 0.2; /* Start with 20% opacity */
+            }
+            100% {
+                transform: translate(100%, -50%) rotate(360deg); /* Move to the right */
+                opacity: 1; /* End with 100% opacity */
+            }
+        }
+
+        .realistic-sun {
+            animation: sunrise 5s linear infinite; /* Adjust duration as needed */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Impact of Daylight Saving Time on Health</h1>
+        <a href="index.html" class="back-to-home">Back to Home</a>
+    </header>
+    <main>
+        <section>
+            <h2>Understanding Daylight Saving Time</h2>
+            <p>Daylight saving time (DST) involves setting the clock forward by one hour during the warmer months to extend evening daylight. While this can be beneficial for outdoor activities, it can also disrupt sleep patterns and affect overall health. Studies have shown that the transition into and out of DST can lead to various health issues.</p>
+            <p>For example, research indicates that the shift can lead to an increase in heart attacks, strokes, and even accidents due to sleep deprivation. The abrupt change in time can disrupt circadian rhythms, leading to fatigue and decreased productivity.</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="6" x2="12" y2="12" />
+                <line x1="12" y1="12" x2="16" y2="12" />
+            </svg>
+        </section>
+        <section>
+            <h2>Effects on Health</h2>
+            <p>Shifting the clock can lead to various health impacts, including:</p>
+            <ul>
+                <li><strong>Tiredness:</strong> Many people experience fatigue and sleep disturbances after the clock change. This can lead to decreased alertness and productivity.</li>
+                <li><strong>Increased Stress:</strong> The sudden change can lead to increased stress levels and anxiety, as the body struggles to adjust to the new schedule.</li>
+                <li><strong>Health Risks:</strong> Studies have shown a correlation between the transition to DST and an increase in heart attacks and accidents. For instance, a study published in the <em>New England Journal of Medicine</em> found a 24% increase in heart attacks in the week following the spring transition.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Animation of Effects</h2>
+            <div id="animation-container" style="position: relative; width: 220px; height: 220px; margin: 0 auto;">
+                <div class="realistic-sun" style="position: absolute; left: 50%; transform: translateX(-50%);">
+                    <div class="sun-core" style="width: 60px; height: 60px; background: radial-gradient(circle, #ffcc00 40%, #ff9900 100%); border-radius: 50%; position: relative; z-index: 2; box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);"></div>
+                    <div class="sun-rays" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1;">
+                        <div style="position: absolute; width: 10px; height: 50px; background-color: #ffcc00; top: 0; left: 50%; transform: translateX(-50%);"></div>
+                        <div style="position: absolute; width: 10px; height: 50px; background-color: #ffcc00; top: 50%; left: 0; transform: translateY(-50%);"></div>
+                        <div style="position: absolute; width: 10px; height: 50px; background-color: #ffcc00; top: 50%; right: 0; transform: translateY(-50%);"></div>
+                        <div style="position: absolute; width: 10px; height: 50px; bottom: 0; left: 50%; transform: translateX(-50%);"></div>
+                        <div style="position: absolute; width: 10px; height: 50px; background-color: #ffcc00; top: 10%; left: 10%; transform: rotate(45deg);"></div>
+                        <div style="position: absolute; width: 10px; height: 50px; background-color: #ffcc00; top: 10%; right: 10%; transform: rotate(-45deg);"></div>
+                        <div style="position: absolute; width: 10px; height: 50px; bottom: 10%; left: 10%; transform: rotate(-45deg);"></div>
+                        <div style="position: absolute; width: 10px; height: 50px; bottom: 10%; right: 10%; transform: rotate(45deg);"></div>
+                    </div>
+                </div>
+                <div class="clock-frame">
+                    <div id="clock" style="position: relative; width: 100%; height: 100%; border: 5px solid #0072c6; border-radius: 50%; background-color: white;">
+                        <div id="hour-hand" style="position: absolute; width: 6px; height: 50px; background-color: #0072c6; top: 20px; left: 50%; transform-origin: bottom; transform: rotate(0deg);"></div>
+                        <div style="position: absolute; top: 10px; left: 50%; transform: translateX(-50%);">12</div>
+                        <div style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%);">9</div>
+                        <div style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%);">3</div>
+                        <div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">6</div>
+                    </div>
+                </div>
+                <div id="tiredness-indicator" style="display: block; text-align: center; font-size: 24px; color: red; position: absolute; top: 70%; left: 50%; transform: translate(-50%, -50%);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="100" viewBox="0 0 120 100" style="vertical-align: middle;">
+                        <!-- Head -->
+                        <circle cx="60" cy="50" r="30" fill="#f0c0a0" />
+                        <!-- Eyes -->
+                        <g>
+                            <circle cx="45" cy="45" r="5" fill="#000" />
+                            <circle cx="75" cy="45" r="5" fill="#000" />
+                        </g>
+                        <!-- Eyelids -->
+                        <style>
+                            @keyframes close-eyes {
+                                0% { transform: translateY(0); }
+                                50% { transform: translateY(10px); } /* Halfway closed */
+                                100% { transform: translateY(0); } /* Fully open */
+                            }
+                            .eyelid {
+                                fill: #f0c0a0; /* Same color as head */
+                                animation: close-eyes 4s infinite; /* Continuous opening and closing */
+                            }
+                        </style>
+                        <rect x="40" y="40" width="10" height="5" class="eyelid" />
+                        <rect x="70" y="40" width="10" height="5" class="eyelid" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Tips to Cope with DST</h2>
+            <p>Here are some tips to help you adjust:</p>
+            <ul>
+                <li>Gradually adjust your sleep schedule a few days before the change.</li>
+                <li>Get plenty of natural light in the morning.</li>
+                <li>Limit caffeine and screen time before bed.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Share Your Experience</h2>
+            <p>Have you noticed any effects from the time change? Let us know!</p>
+            <form id="feedback-form">
+                <label for="experience">Your Experience:</label><br>
+                <textarea id="experience" name="experience" rows="4" cols="50" placeholder="Share your thoughts..."></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Heggie Web Services. All rights reserved.</p>
+        <a href="index.html">Back to Home</a>
+    </footer>
+</body>
+</html> 
