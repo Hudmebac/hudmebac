@@ -10,15 +10,18 @@ This GitHub space serves as a sandbox for my **explorations and experiments**. Y
 
 ## My Approach to Product Management
 
-🚀 **Strategic Thinking** – Driving product vision and roadmap decisions based on user needs and market trends.  
+🚀 **Strategic Thinking** – Shaping product vision and crafting roadmaps aligned with user needs and market insights.  
 ⚙️ **Technical Collaboration** – Working hand-in-hand with engineers to translate ideas into scalable, impactful features.  
 📊 **Data-Driven Decisions** – Leveraging insights to refine strategy and optimize products for success.  
-🤖 **AI & Emerging Tech** – Exploring the intersections of AI, automation, and product development to unlock new possibilities.  
+🤖 **AI & Emerging Tech** – Harnessing AI, automation, and product development to drive innovation.  
 
 ## Connect with Me
 
 If you're passionate about **building great products**, exploring the latest in **AI-driven innovation**, or simply want to discuss product strategy, feel free to reach out! Let's collaborate and learn together.  
-🌐 [LinkedIn](https://www.linkedin.com/in/craig-heggie-a51b4340/) | 📨 [Email](hudmebac@googlemail.com) | 💡 [Personal Blog](https://heggie.netlify.app/)
+
+🌐 [LinkedIn](https://www.linkedin.com/in/craig-heggie-a51b4340/)  
+📨 [Email](mailto:hudmebac@googlemail.com)  
+💡 [Personal Blog](https://heggie.netlify.app/)  
 
 ---
 
