@@ -18,7 +18,7 @@ This GitHub space serves as a sandbox for my **explorations and experiments**. Y
 ## Connect with Me
 
 If you're passionate about **building great products**, exploring the latest in **AI-driven innovation**, or simply want to discuss product strategy, feel free to reach out! Let's collaborate and learn together.  
-🌐 [LinkedIn]([#](https://www.linkedin.com/in/craig-heggie-a51b4340/)) | 📨 [Email](hudmebac@googlemail.com) | 💡 [Personal Blog](https://heggie.netlify.app/)
+🌐 [LinkedIn](https://www.linkedin.com/in/craig-heggie-a51b4340/) | 📨 [Email](hudmebac@googlemail.com) | 💡 [Personal Blog](https://heggie.netlify.app/)
 
 ---
 
